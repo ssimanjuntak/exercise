@@ -1,7 +1,5 @@
 package com.sangga.exercise.controller;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
@@ -13,10 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver;
 
-import com.sangga.exercise.entity.Exercise1DataStoreAndLoadEntity;
-import com.sangga.exercise.exception.DataNotFound;
 import com.sangga.exercise.service.Exercise1DataStoreAndLoadDaoService;
 import com.sangga.exercise.util.JsonUtil;
 

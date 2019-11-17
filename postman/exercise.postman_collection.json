@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "ce6a735e-d007-4279-8014-466a96a0826d",
+		"name": "exercise",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Exercise1 get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/storeandload?id=102",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"storeandload"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "102"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Exercise1 put",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"key1A\": \"value10A\",\n        \"key2B\": \"value21B\"\n    },\n    {\n        \"keyA2\": \"valueABa\"\n    }\n]"
+				},
+				"url": {
+					"raw": "http://localhost:8080/storeandload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"storeandload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Exercise2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    [\n        0,\n        4,\n        0,\n        0,\n        0,\n        0,\n        0,\n        8,\n        0\n    ],\n    [\n        4,\n        0,\n        4,\n        0,\n        0,\n        0,\n        0,\n        4,\n        0\n    ],\n    [\n        0,\n        4,\n        0,\n        7,\n        0,\n        1,\n        0,\n        0,\n        10\n    ],\n    [\n        0,\n        0,\n        7,\n        0,\n        9,\n        14,\n        0,\n        0,\n        0\n    ],\n    [\n        0,\n        0,\n        0,\n        9,\n        0,\n        10,\n        0,\n        0,\n        0\n    ],\n    [\n        0,\n        0,\n        1,\n        0,\n        10,\n        0,\n        2,\n        0,\n        0\n    ],\n    [\n        0,\n        0,\n        0,\n        14,\n        0,\n        2,\n        0,\n        1,\n        6\n    ],\n    [\n        8,\n        4,\n        0,\n        0,\n        0,\n        0,\n        1,\n        0,\n        7\n    ],\n    [\n        0,\n        0,\n        10,\n        0,\n        0,\n        0,\n        6,\n        7,\n        0\n    ]\n]"
+				},
+				"url": {
+					"raw": "http://localhost:8080/optimalpath",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"optimalpath"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Exercise3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"orderProducts\": [\n        {\n            \"quantity\": 5,\n            \"productId\": 1\n        },\n        {\n            \"quantity\": 2,\n            \"productId\": 3\n        },\n        {\n            \"quantity\": 2,\n            \"productId\": 4\n        }\n    ],\n    \"customerId\": \"123ABC\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/discountpurchase",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"discountpurchase"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
